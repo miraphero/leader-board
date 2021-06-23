@@ -1,0 +1,145 @@
+
+body{
+margin: 0;
+background-color: #9f9f9f;
+font-family: 'Poppins', sans-serif;
+}
+
+.resize-me {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.nav-items img{
+    height:70px;
+    width: 70px;
+}
+.nav{
+    background-color: blue;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-items{
+    align-items: center;
+    display: flex;
+   
+}
+.item{
+    margin: 5px;
+}
+.color-me{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.long-gap{
+    margin-left: 700px;
+}
+.special-margin{
+    margin-right: 32px;
+}
+/* ...............navbar styles ends here................ */
+
+.section1, .section2{
+   
+    /* width: 1160px; */
+    background-color: #ffffff;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.resize-me2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-gap: 20px;
+}
+.trainer,blog{
+    display: flex;
+    margin: 10px;
+    /* align-items: center; */
+    margin-top: 20px;
+    place-items: center;
+}
+.gap{
+    margin-left: 20px;
+}
+.section-title{
+    color: #562EFF;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.line{
+    height: 2px;
+    /* width: 0%; */
+    background-color:#9f9f9f ;
+    margin-left:50px ;
+    margin-right:50px ;
+}
+
+.container2{
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    
+}
+.blog{
+    
+    display: flex;
+}
+
+.thumbnail img {
+    width: 100%;
+    width: 200px;
+}
+.course img{
+    width: 100%;
+    height: 150px;
+}
+.course{
+  
+    margin: 1px;
+    /* height: ; */
+    width: 290px;
+    padding: 10px;
+    margin-left: 50px;
+}
+.container3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* padding: 30px; */
+    grid-gap: 3px;
+    margin-top: 20px;
+    place-items: center;
+
+}
+.checked {
+    color: orange;
+  }
+@media (max-width:992px) {
+    .container1, .container3{
+     grid-template-columns: repeat(2, 1fr);
+    }
+    .container2{
+       grid-template-columns: repeat(1, 1fr);
+    }
+}
+    @media (max-width:668px) {
+        .container1, .container3{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .blog, .course{
+            display: block;
+        }
+
+    }
